@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #0f3568;
+            background-image: linear-gradient(100deg, #02335c 50%,#ff0404 50%);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            line-height: 3;
+            color: rgb(0, 0, 0);  
+        }
+        form{
+              background-image: linear-gradient(100deg, #ff0404 50%,#02335c 50%);             
+        }
+        
+    </style>
+</head>
+<body>
+    <form>
+        <div class="row">
+            <label>USERNAME</label>
+            <input id="Username" placeholder="Enter Your Username"/>
+        </div class="row">
+        <div>
+            <label>PASSWORD</label>
+            <input id ='password'type='password' placeholder="enter your password"/>
+        </div>
+        <button class="topg">LOGIN</button>
+      
+    </form>
+    <script>
+        function validate()
+        {
+             var Username=document.getElementById("username").value;
+             var password=document.getElementById("password").value;
+             console.log(Username,password)
+             if(Username="") {
+                alert("please enter username")
+                return false
+             }             
+        }
+    </script>
+</body>
+</html>    
